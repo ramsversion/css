@@ -1,0 +1,115 @@
+header {
+    align-items: center;
+    width: 100%;
+}
+
+header #top-menu {
+    height: 45px;
+    display: grid;
+    grid-template-columns: 26px 100px 4fr 1fr;
+    align-items: center;
+}
+
+header #top-menu ul {
+    flex-grow: 1;
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 0px;
+    height: 18px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 550;
+    margin: 10px;
+    color: #1f1f1f;
+    transition: all 0.2s;
+
+    -webkit-tap-highlight-color: transparent;
+    align-items: center;
+    min-width: 100px;
+
+    /* display: flex;
+
+    height: 100%;
+    letter-spacing: 0;
+    white-space: nowrap; */
+}
+
+header ul li a:hover {
+    color: #c4c7c5;
+}
+
+
+header #top-menu .content-button {
+    height: 45px;
+    min-width: 300px;
+    align-items: right;
+    justify-content: right;
+    display: block;
+
+
+}
+
+
+header #top-menu .content-button .primary,
+.secondary {
+    border: 1px solid #fac680;
+    border-radius: 100px;
+    color: #3b3b3b;
+    font-size: 14px;
+    font-weight: 400;
+    height: 32px;
+    padding: 0;
+    text-transform: uppercase;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+
+.secondary {
+    border: 1px solid #c2c2c2;
+    background-color: #fff
+}
+
+.secondary:active,
+.secondary:hover {
+    background: #fef4e6
+}
+
+.secondary:active {
+    border: 1px solid #fac680
+}
+
+.primary {
+    background: #fde8cc;
+    border: 1px solid #fde8cc
+}
+
+.primary:hover {
+    background: #fef4e6;
+    border-color: #fac680
+}
+
+
+/* Smartphones en modo retrato y paisaje */
+@media only screen and (max-width: 767px) {
+    /* Estilos para dispositivos móviles */
+}
+
+/* Tablets en modo retrato y paisaje */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+}
+
+/* Pantallas más grandes que 1024px */
+@media only screen and (min-width: 1025px) {
+    /* Estilos para laptops y desktops */
+}

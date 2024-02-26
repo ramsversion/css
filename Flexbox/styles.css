@@ -1,0 +1,51 @@
+body {}
+
+.parent {
+    display: flex;
+    flex-direction: row;/*<--- eje princial*/
+    flex-wrap: nowrap; 
+    /*  nowrap: si no hay espacio en el contenedor, se achican los hijos */
+    /*  wrap: si no hay espacio en el contenedor, pasa a la linea de abajo los hijos */
+    border: 4px solid #000;
+    width: 250px;
+    box-sizing: border-box;
+    justify-content:  center;
+    align-items: center;
+    gap: 16px;
+}
+
+.item {
+    border: 1px solid;
+    opacity: .9;
+    width: 50px;
+    height: 50px;
+    background: #09f;
+
+    /* valores por defecto*/
+    /* flex-grow: 1; */
+    /* flex-grow: 0 = los elementos no crecen  */
+    /* flex-shrink: 1; */
+    /*flex-shrink: 1 Los elmentos pueden reducir su tamaño a un tamaño más pequeño que su flex-basis */
+    /* flex-basis: 0; */
+    /*flex-basis: auto Los elementos tienen un tamaño base en auto */
+    /*flex-basis: 0 Los elementos tienen el mismo tamaño */
+
+    /* flex: 1; */
+    /*flex: 1 método abreviado para flex-grow: 1; flex-shrink: 1; flex-basis: 0;*/
+}
+
+
+.item:first-child {
+    background: yellow;
+    height: 25px;
+}
+
+.item:nth-child(2) {
+    background: blue;
+    height: 30px;
+}
+
+.item:last-child {
+    background: red;
+    height: 40px;
+}
